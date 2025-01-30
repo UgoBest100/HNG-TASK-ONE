@@ -17,7 +17,7 @@ app.add_middleware(
 def read_root():
     return {
         "email": "judelisent@gmail.com",
-         "current_datetime": datetime.now(timezone.utc).isoformat(),
+        "current_datetime": datetime.utcnow().isoformat() + "Z",
 
         "github_url": "https://github.com/UgoBest100/HNG-TASK-ONE"
     }
